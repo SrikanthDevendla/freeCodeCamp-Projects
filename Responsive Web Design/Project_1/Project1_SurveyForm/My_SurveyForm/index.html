@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+        Thank you for taking the time to give this survey!!!
+    </p>
+    <form id="survey-form">
+        <fieldset class="external">
+            <fieldset class="internal">
+                <label id="name-label" for="name">Name
+                    <input type="text" id="name" name="userName" placeholder="Enter your name" required /></label>
+                <label id="email-label" for="email">Email
+                    <input type="email" id="email" name="userEmail" placeholder="Enter your email" required /></label>
+                <label id="number-label" for="number">Number<input type="number" id="number" name="userNumber" min="100" max="999"
+                        placeholder="Enter your Mobile Number" required /></label>
+            </fieldset>
+            <fieldset class="internal">
+                <label>
+                    What job do you prefer?
+                    <select id="dropdown">
+                        <option value="">(Select one)</option>
+                        <option value="1">Engineer</option>
+                        <option value="2">Doctor</option>
+                        <option value="3">Police</option>
+                        <option value="4">Lawyer</option>
+                        <option value="5">Prefer not to say</option>
+                        <option value="6">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset class="internal">
+                <label>
+                    Do you watch cricket match?
+                    <label class="yes-no" for="yes"><input id="yes" type="radio" name="yes-no" class="inline" value="yes" />
+                        Yes</label>
+                    <label class="yes-no" for="no"><input id="no" type="radio" name="yes-no" class="inline" value="no" />
+                        No</label>
+                </label>
+            </fieldset>
+            <fieldset class="internal">
+                <label>
+                    What are your Hobbies?
+                    <label for="read">
+                        <input class="inline" id="read" type="checkbox" value="reading" />
+                        Reading Books
+                    </label>
+                    <label for="play">
+                        <input class="inline" id="play" type="checkbox" value="playing" />
+                        Playing Games
+                    </label>
+                    <label for="dance">
+                        <input class="inline" id="dance" type="checkbox" value="dancing" />
+                        Dancing
+                    </label>
+                    <label for="more">
+                        <input class="inline" id="more" type="checkbox" value="and-more" />
+                        And More
+                    </label>
+                    <label for="no-hobbies">
+                        <input class="inline" id="no-hobbies" type="checkbox" value="noHobbies" />
+                        No Hobbies
+                    </label>
+                </label>
+            </fieldset>
+            <fieldset class="internal">
+                <label for="comments">
+                    Additional Comments
+                    <textarea name="addComment" id="comments" cols="30" rows="5"></textarea>
+                </label>
+            </fieldset>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
